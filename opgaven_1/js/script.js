@@ -1,6 +1,6 @@
 console.log("JavaScript ready!");
 
-// 1
+// 2
 
 var secondVarible = "Hello world";
 var thirdVarible = "I'm third!";
@@ -18,7 +18,7 @@ var status = "Online";
 var test2 = "This is test 2";
 var lastVarible = "This is the last varible";
 
-// 2
+// 3
 for (var i = 0; i < 15; i++) {
   window["firstVarible" + i] = i;
   console.log(window["firstVarible" + i]);
@@ -146,7 +146,7 @@ spliceArray.pop();
 
 console.log(spliceArray + " = Laatste array string is weggehaald.");
 
-console.log("Pop haalt de laatste value weg dus de tegenhanger is push.");
+console.log("Pop haalt de laatste value weg dus de tegenhanger is shift§.");
 
 //Alphabet sort
 
@@ -165,3 +165,123 @@ console.log(sortArray);
 var numberArray = Array(2, 5, 6, 1, 7, 9);
 
 console.log(numberArray.sort());
+
+
+//22
+
+console.log(sortArray);
+
+var arrayKopie = Array();
+
+arrayKopie = sortArray.splice(2);
+console.log("Is gesplit naar...");
+console.log(sortArray);
+console.log(arrayKopie);
+
+
+//23
+var arrayPart1 = Array("test, test2, test3");
+var arrayPart2 = Array("test4");
+arrayPart2.push(arrayPart2);
+console.log(arrayPart1);
+
+
+//24
+//een staat bij liin 84!
+
+document.addEventListener("mousemove", function(){
+  console.warn("Mouse is moving on screen");
+});
+
+document.addEventListener("mouseout", function(){
+  console.warn("Mouse is out of the browsers screen");
+});
+
+
+//25
+
+var person = {
+    firstName:"Simon",
+    lastName:"Boerrigter",
+    age:17,
+    eyeColor:"green"
+};
+
+var car = {
+    name:"Porsche",
+    model:"718 Boxster",
+    Engine:"300hp"
+};
+
+var houseWithOpenings = {
+    doors:2,
+    windows:10
+};
+
+var laptop = {
+    buildYear:2016,
+    osInstalled:"OSX",
+    has4kScreen:false
+};
+
+var houseWithOpenings = {
+    doors:2,
+    windows:10
+};
+
+var train = {
+    company: "NS",
+    seatClass:2
+};
+
+var keyboard = {
+    layout: "QWERTY",
+    hasNumPad:true
+};
+
+var samsungTV = {
+    smartTV: true,
+    is4K:false
+};
+
+var playstationController = {
+    hasLightOn: true,
+    dualshock:true
+};
+
+var iphoneX = {
+    homebutton: false,
+    touchID:false,
+    chip: "A11 BIONIC"
+};
+
+//26
+
+function getIndentity(firstName, lastName) {
+  var person2 = {
+      firstName: firstName,
+      lastName: lastName
+  };
+  var information = person2.firstName;
+  information += " " + person2.lastName;
+  return information;
+}
+
+console.log(getIndentity("Simon", "Boerrigter"));
+
+//27
+
+function showName() {
+  var student = {
+    name: "Simon"
+  };
+  return student
+}
+
+console.log(showName());
+
+//28
+
+var student = {
+  name: "Test"
+};
