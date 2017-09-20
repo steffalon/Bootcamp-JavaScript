@@ -15,4 +15,8 @@ window.addEventListener("load", function() {
   //video playback time
   var video = document.getElementById("video");
   video.playbackRate = 0.1;
+
+  if (typeof NaN == "number") {
+    console.log(typeof NaN);
+  }
 });
